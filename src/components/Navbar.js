@@ -26,24 +26,24 @@ export class Navbar extends Component {
                         Categories
                       </Link>
                       <ul className="dropdown-menu">
-                        <li><Link className="dropdown-item" to="/business">Business</Link></li>
-                        <li><Link className="dropdown-item" to="/entertainment">Entertainment</Link></li>
-                        <li><Link className="dropdown-item" to="/health">Health</Link></li>
-                        <li><Link className="dropdown-item" to="/science">Science</Link></li>
-                        <li><Link className="dropdown-item" to="/sports">Sports</Link></li>
-                        <li><Link className="dropdown-item" to="/technology">Technology</Link></li>
+                        <li><Link className="dropdown-item" to="#/business">Business</Link></li>
+                        <li><Link className="dropdown-item" to="#/entertainment">Entertainment</Link></li>
+                        <li><Link className="dropdown-item" to="#/health">Health</Link></li>
+                        <li><Link className="dropdown-item" to="#/science">Science</Link></li>
+                        <li><Link className="dropdown-item" to="#/sports">Sports</Link></li>
+                        <li><Link className="dropdown-item" to="#/technology">Technology</Link></li>
                       </ul>
                     </li>
                     <li className="nav-item dropdown" data-bs-theme='dark'>
-                      <Link className="nav-link dropdown-toggle" to="/categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <Link className="nav-link dropdown-toggle" to="#/categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Country
                       </Link>
                       <ul className="dropdown-menu">
-                        <li><Link className="dropdown-item" to="/aus">Australia</Link></li>
-                        <li><Link className="dropdown-item" to="/in">India</Link></li>
-                        <li><Link className="dropdown-item" to="/nz">New Zealand</Link></li>
-                        <li><Link className="dropdown-item" to="/uk">United Kingdom</Link></li>
-                        <li><Link className="dropdown-item" to="/usa">United States</Link></li>
+                        <li><Link className="dropdown-item" to="#/aus">Australia</Link></li>
+                        <li><Link className="dropdown-item" to="#/in">India</Link></li>
+                        <li><Link className="dropdown-item" to="#/nz">New Zealand</Link></li>
+                        <li><Link className="dropdown-item" to="#/uk">United Kingdom</Link></li>
+                        <li><Link className="dropdown-item" to="#/usa">United States</Link></li>
                       </ul>
                     </li>
                 </ul>
