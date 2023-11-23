@@ -2,7 +2,7 @@ import './App.css';
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import News from './components/News';
-import { Routes, Route, HashRouter} from 'react-router-dom';
+import { Routes, Route, BrowserRouter} from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar';
 
 export default class App extends Component { 
@@ -20,7 +20,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter basename='/NewsShark'>
         <div>
           <Navbar />
           <LoadingBar
@@ -44,7 +44,7 @@ export default class App extends Component {
 
           </Routes>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     )
   }
 }
