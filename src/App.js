@@ -6,7 +6,7 @@ import { Routes, Route, BrowserRouter} from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar';
 
 export default class App extends Component { 
-  apiKey = process.env.REACT_APP_NEWS_API;
+  apiKey = 'bbcb99a1472142fe94dea903fb508239';
 
   state = {
     progress: 0
@@ -20,7 +20,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <BrowserRouter basename='/NewsShark/#'>
+      <BrowserRouter>
         <div>
           <Navbar />
           <LoadingBar
@@ -29,7 +29,7 @@ export default class App extends Component {
             progress={this.state.progress}
           />
           <Routes>
-            <Route exact path='/NewsShark' element={<News setProgress={this.setProgress} key='general' pageSize={20} category={'general'} apiKey={this.apiKey} />} />
+            <Route exact path='/' element={<News setProgress={this.setProgress} key='general' pageSize={20} category={'general'} apiKey={this.apiKey} />} />
             <Route exact path='/business' element={<News setProgress={this.setProgress} key='business' pageSize={20} category={'business'} apiKey={this.apiKey} />} />
             <Route exact path='/entertainment' element={<News setProgress={this.setProgress} key='entertainment' pageSize={20} category={'entertainment'} apiKey={this.apiKey} />} />
             <Route exact path='/health' element={<News setProgress={this.setProgress} key='health' pageSize={20} category={'health'} apiKey={this.apiKey} />} />
