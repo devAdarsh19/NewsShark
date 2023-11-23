@@ -32,7 +32,7 @@ export class Navbar extends Component {
                       </ul>
                     </li>
                     <li className="nav-item dropdown" data-bs-theme='dark'>
-                      <Link className="nav-link dropdown-toggle" to="#/categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <Link className="nav-link dropdown-toggle" to="/categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Country
                       </Link>
                       <ul className="dropdown-menu">
