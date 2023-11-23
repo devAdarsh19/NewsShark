@@ -6,7 +6,7 @@ import { Routes, Route, BrowserRouter} from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar';
 
 export default class App extends Component { 
-  apiKey = 'bbcb99a1472142fe94dea903fb508239';
+  // apiKey = 'bbcb99a1472142fe94dea903fb508239';
 
   state = {
     progress: 0

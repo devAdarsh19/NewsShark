@@ -12,7 +12,7 @@ export class NewsItem extends Component {
                 <p><small>{newsSource}</small></p>
                 <p className="card-text">{description}..<a href={newsUrl} rel="noreferrer" target='_blank' className="btn btn-sm btn-transparent"><b>Read more</b></a></p>
                 <p className='card-text'><small>{new Date(newsDate).toLocaleDateString()}</small></p>
-                {/* <a href={newsUrl} rel="noreferrer" target='_blank' className="btn btn-sm btn-primary">Read more</a> */}
+                <a href={newsUrl} rel="noreferrer" target='_blank' className="btn btn-sm btn-primary">Read more</a>
             </div>
         </div>
       </div>
