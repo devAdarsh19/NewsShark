@@ -29,7 +29,7 @@ export default class App extends Component {
             progress={this.state.progress}
           />
           <Routes>
-            <Route exact path='/' element={<News setProgress={this.setProgress} key='general' pageSize={20} category={'general'} apiKey={this.apiKey} />} />
+            <Route exact path='/NewsShark' element={<News setProgress={this.setProgress} key='general' pageSize={20} category={'general'} apiKey={this.apiKey} />} />
             <Route exact path='/business' element={<News setProgress={this.setProgress} key='business' pageSize={20} category={'business'} apiKey={this.apiKey} />} />
             <Route exact path='/entertainment' element={<News setProgress={this.setProgress} key='entertainment' pageSize={20} category={'entertainment'} apiKey={this.apiKey} />} />
             <Route exact path='/health' element={<News setProgress={this.setProgress} key='health' pageSize={20} category={'health'} apiKey={this.apiKey} />} />
